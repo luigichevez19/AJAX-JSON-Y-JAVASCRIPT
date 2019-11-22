@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Super Mercado Don Diego</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+function cerrar()
+{
+  alert("Usted a cerrado sesion con exito");
+}
+</script>
+</head>
+
+<body class="text-center">
+<header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      
+    	<label id="usuario" class="navbar-brand"></label>
+      
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item ">
+            <a class="nav-link" href="Venta.html">Venta nueva</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="inventario.html">Consultar Inventario</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" onclick="cerrar()" href="Login.html">Salir del sistema</a>
+          </li>
+          
+        </ul>
+        
+      </div>
+    </nav>
+    <script type="text/javascript">
+    
+if(window.addEventListener){
+  window.addEventListener("load",mostrar, false);
+}
+else{
+  window.attachEvent("onload", mostrar);
+}
+function mostrar()
+{
+    var usua=localStorage.getItem("usua");
+ document.getElementById('usuario').textContent=usua;
+ }    
+    </script>
+</header>
+
+	<div class="container">
+		<br><br><br>
+		<h1>Bienvenido al sistema de ventas Don Diego</h1>
+	</div>
+
+
+
+</body>
+
+</html>

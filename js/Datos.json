@@ -1,0 +1,14 @@
+{
+"productos":[
+  {"codigo":"1", "nombre":"Huevos","precio":"0.10", "cantidad":"40"},
+  {"codigo":"2", "nombre":"Pollo","precio":"5", "cantidad":"20"},
+  {"codigo":"3", "nombre":"Aceite","precio":"3", "cantidad":"20"},
+  {"codigo":"4", "nombre":"Fosforos","precio":"0.5", "cantidad":"20"},
+  {"codigo":"5", "nombre":"Dulces","precio":"0.8", "cantidad":"20"},
+  {"codigo":"6", "nombre":"Margarina","precio":"0.3", "cantidad":"20"},
+  {"codigo":"7", "nombre":"Jabon","precio":"2.25", "cantidad":"20"},
+  {"codigo":"8", "nombre":"Carne","precio":"2.75", "cantidad":"20"},
+  {"codigo":"9", "nombre":"Gaseosa","precio":"1.8", "cantidad":"20"},
+  {"codigo":"10", "nombre":"Desechables","precio":"3.25", "cantidad":"20"}
+]
+}

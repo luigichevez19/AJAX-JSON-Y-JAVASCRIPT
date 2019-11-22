@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Super Mercado Don Diego</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+function cerrar()
+{
+  alert("Usted a cerrado sesion con exito");
+}
+</script>
+</head>
+
+<body >
+<header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <label id="usuario" class="navbar-brand"></label>
+    
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" onclick="n()" href="Venta.html">Venta nueva</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Consultar Inventario</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" onclick="cerrar()" href="Login.html">Salir del sistema</a>
+          </li>
+          
+        </ul>
+        
+      </div>
+    </nav>
+    
+</header>
+<div class="container">
+    <br><br><br>
+    <h1>Consultar Producto</h1>
+    <br>
+    <div class="container">
+      <form class="form">
+        <div class="form-group">
+          <label>Producto</label>
+          <input id="filtro" onfocusout="cambio()" type="text" class="form-control" placeholder="Ingresar codigo o nombre del producto">
+        </div>
+        <div class="container">
+          <button type="button" onclick="buscar()" class="btn btn-primary">Ingresar</button>
+        </div>
+        
+      </form>
+    </div>
+
+
+  </div>
+
+	<div class="container">
+		<br><br><br>
+		<h1>Productos</h1>
+    <br>
+	</div>
+
+<div class="container">
+<div class="table-responsive">
+  <table class="table table-bordered table-sm text-center">
+    <thead class="thead-dark">
+      <tr>
+        <th>Codigo</th>
+        <th>Producto</th>
+        <th>Cantidad</th>
+      </tr>      
+    </thead>
+    <tbody id="Dato">
+      
+
+    </tbody>
+
+  </table>
+</div>
+</div>
+<script src="js/SCRUD2.js"></script>
+</body>
+
+</html>
